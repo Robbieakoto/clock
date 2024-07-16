@@ -1,46 +1,12 @@
 body {
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-}
+    font-family: system-ui;
+    background: #042aa5;
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    margin-top: 40svb;
+  }
 
-.clock {
-    height: 200px;
-    width: 150px;
-    position: relative;
-    left: 45vw;
-    top: 40vh;
-}
 
-.clock>* {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 128px;
-    width: 128px;
-}
 
-.clock img {
-    display: block;
-    height: 128px;
-    width: 128px;
-}
 
-.clock .second-hand img {
-    animation: spin 60s linear infinite;
-}
-
-.clock .minute-hand img {
-    animation: spin 3600s linear infinite;
-}
-
-.clock .hour-hand img {
-    animation: spin 43200s linear infinite;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
